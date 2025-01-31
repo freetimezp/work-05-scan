@@ -47,7 +47,7 @@ $users = 'Log';
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         let tableBody = document.getElementById("testActiveRows");
-        console.log(tableBody);
+        //console.log(tableBody);
 
         if (tableBody) {
             let rows = tableBody.querySelectorAll("tr");
