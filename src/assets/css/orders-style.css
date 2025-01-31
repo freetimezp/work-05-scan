@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #79c2d0;
+}
+
+.search-box input {
+    width: 60%;
+    outline: none;
+    border: none;
+}

@@ -10,7 +10,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="navbar-item nav-link active" href="#" aria-current="page">
+                <a class="navbar-item nav-link active"
+                    href="<?= "http://localhost/cashier-workplace-master/src/" . "/app/views/catalog.view.php" ?>">
                     <i class="bi bi-search"></i>
                     <span>Каталог</span>
                 </a>

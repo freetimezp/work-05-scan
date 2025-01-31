@@ -78,7 +78,7 @@ $users = 'Log';
                 let randomIndex = Math.floor(Math.random() * rows.length);
                 rows[randomIndex].click();
 
-                console.log(`Auto-clicked row index: ${randomIndex}`);
+                //console.log(`Auto-clicked row index: ${randomIndex}`);
             }
 
             //setInterval(autoClickRandomRow, 2000);

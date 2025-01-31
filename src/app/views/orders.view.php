@@ -19,9 +19,9 @@ $users = 'Log';
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/catalog-style.css">
+    <link rel="stylesheet" href="../../assets/css/orders-style.css">
 
-    <title>Project | Scan | Catalog</title>
+    <title>Project | Scan | Orders</title>
 
 </head>
 
@@ -45,55 +45,66 @@ $users = 'Log';
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="col">Артикул</th>
-                            <th scope="col" class="col">Назва</th>
-                            <th scope="col" class="col">Категорія</th>
-                            <th scope="col" class="col">Характеристика</th>
+                            <th scope="col" class="col">№ Чеку</th>
+                            <th scope="col" class="col">Дата</th>
+                            <th scope="col" class="col">Загальна вартість</th>
+                            <th scope="col" class="col">Знижка (ім'я)</th>
+                            <th scope="col" class="col">Знижка (%)</th>
+                            <th scope="col" class="col">Всього продано</th>
+                            <th scope="col" class="col">Магазин</th>
                             <th scope="col" class="col">Вартість</th>
                         </tr>
                     </thead>
-                    <tbody id="catalogRows">
+                    <tbody id="ordersRows">
                         <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
+                            <td>dc56675412</td>
+                            <td>31.01.2025</td>
+                            <td>1250 грн.</td>
+                            <td></td>
+                            <td>0%</td>
+                            <td>1250 грн.</td>
+                            <td>Сільпо</td>
+                            <td>320 грн.</td>
                         </tr>
                         <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
+                            <td>dc56675412</td>
+                            <td>31.01.2025</td>
+                            <td>1250 грн.</td>
+                            <td></td>
+                            <td>0%</td>
+                            <td>1250 грн.</td>
+                            <td>Сільпо</td>
+                            <td>320 грн.</td>
                         </tr>
                         <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
+                            <td>dc56675412</td>
+                            <td>31.01.2025</td>
+                            <td>1250 грн.</td>
+                            <td></td>
+                            <td>0%</td>
+                            <td>1250 грн.</td>
+                            <td>Сільпо</td>
+                            <td>320 грн.</td>
                         </tr>
                         <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
+                            <td>dc56675412</td>
+                            <td>31.01.2025</td>
+                            <td>1250 грн.</td>
+                            <td></td>
+                            <td>0%</td>
+                            <td>1250 грн.</td>
+                            <td>Сільпо</td>
+                            <td>320 грн.</td>
                         </tr>
                         <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
-                        </tr>
-                        <tr>
-                            <td>ASD123</td>
-                            <td>Кофе</td>
-                            <td>Напій</td>
-                            <td>Мелена кава</td>
-                            <td>120 грн.</td>
+                            <td>dc56675412</td>
+                            <td>31.01.2025</td>
+                            <td>1250 грн.</td>
+                            <td></td>
+                            <td>0%</td>
+                            <td>1250 грн.</td>
+                            <td>Сільпо</td>
+                            <td>320 грн.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -106,7 +117,7 @@ $users = 'Log';
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        let tableBody = document.getElementById("catalogRows");
+        let tableBody = document.getElementById("ordersRows");
         //console.log(tableBody);
 
         if (tableBody) {
