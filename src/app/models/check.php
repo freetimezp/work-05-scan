@@ -14,6 +14,11 @@
         <!-- Content start -->
         <div id="content">
             <div class="content-single">
+                <div class="single-up">
+                    щось кодуємо..
+                    <input type="text" id="test-phone-mask" placeholder="+380(__)___-__-__" maxlength="17">
+                </div>
+                <hr style="width: 95%; display: block; margin: 0 auto; opacity: 0.2;">
                 <div class="single-top">
                     <span
                         class="name"><?= isset($string_id) && isset($_SESSION['cart'][$string_id]['full_name']) ? $_SESSION['cart'][$string_id]['full_name'] : 'Відскануйте товар' ?></span>

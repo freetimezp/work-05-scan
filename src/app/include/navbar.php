@@ -11,7 +11,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="navbar-item nav-link active"
-                    href="<?= "http://localhost/cashier-workplace-master/src/" . "/app/views/catalog.view.php" ?>">
+                    href="<?= "http://localhost/cashier-workplace-master/src" . "/app/views/catalog.view.php" ?>">
                     <i class="bi bi-search"></i>
                     <span>Каталог</span>
                 </a>
@@ -19,7 +19,7 @@
             <li class="nav-item">
                 <!-- Button modal -->
                 <a class="navbar-item nav-link active" href="#" aria-current="page" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                    data-bs-target="#exampleModal" id="show-modal-btn">
                     <i class="bi bi-upc-scan"></i>
 
                     <span>Знайти у чеку</span>

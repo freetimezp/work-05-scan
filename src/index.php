@@ -44,47 +44,90 @@ $users = 'Log';
     <?php endif; ?>
 </body>
 
+<script src="./assets/js/inputmask.min.js"></script>
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        let tableBody = document.getElementById("testActiveRows");
-        //console.log(tableBody);
+        let checkTable = setTimeout(() => {
 
-        if (tableBody) {
-            let rows = tableBody.querySelectorAll("tr");
+            let tableBody = document.getElementById("testActiveRows");
+            //console.log(tableBody);
 
-            rows.forEach((el, i) => el.addEventListener("click", () => {
-                rows.forEach(row => row.classList.remove("active"));
-                el.setAttribute("id", `row-${i}`);
+            if (tableBody) {
+                let rows = tableBody.querySelectorAll("tr");
+                //add active
+                rows.forEach((el, i) => el.addEventListener("click", () => {
+                    rows.forEach(row => row.classList.remove("active"));
+                    el.setAttribute("id", `row-${i}`);
 
-                el.classList.add("active");
+                    el.classList.add("active");
 
-                el.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
+                    el.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
 
-                if (el.classList.contains("active")) {
-                    el.setAttribute('tabindex', '-1');
-                    el.focus();
-                    el.removeAttribute('tabindex');
+                    if (el.classList.contains("active")) {
+                        el.setAttribute('tabindex', '-1');
+                        el.focus();
+                        el.removeAttribute('tabindex');
+                    }
+                }));
+
+
+                //autoclick event
+                function autoClickRandomRow() {
+                    if (rows.length === 0) return;
+
+                    let randomIndex = Math.floor(Math.random() * rows.length);
+                    rows[randomIndex].click();
+
+                    //console.log(`Auto-clicked row index: ${randomIndex}`);
                 }
-            }));
 
-
-
-            function autoClickRandomRow() {
-                if (rows.length === 0) return;
-
-                let randomIndex = Math.floor(Math.random() * rows.length);
-                rows[randomIndex].click();
-
-                //console.log(`Auto-clicked row index: ${randomIndex}`);
+                //setInterval(autoClickRandomRow, 2000);
             }
 
-            //setInterval(autoClickRandomRow, 2000);
-        }
+            //add focus on input in modal
+            let modal = document.getElementById("exampleModal");
+            if (modal) {
+                modal.addEventListener("shown.bs.modal", function() {
+                    let barcode = document.getElementById("barcode");
+                    if (barcode) {
+                        barcode.focus();
+                    }
+                });
+            }
 
-    })
+
+            //inputmask
+            const phoneInput = document.getElementById("test-phone-mask");
+            if (phoneInput) {
+                //Inputmask("+380(99)999-99-99").mask(phoneInput);
+
+                phoneInput.addEventListener("input", function(e) {
+                    let input = e.target.value.replace(/\D/g, "");
+
+                    if (input.length < 3) {
+                        input = "380";
+                    } else if (!input.startsWith("380")) {
+                        input = "380" + input.substring(3);
+                    }
+
+                    let formatted = `+${input.substring(0, 3)}`;
+
+                    if (input.length > 3) formatted += `(${input.substring(3, 5)}`;
+                    if (input.length > 5) formatted += `)${input.substring(5, 8)}`;
+                    if (input.length > 8) formatted += `-${input.substring(8, 10)}`;
+                    if (input.length > 10) formatted += `-${input.substring(10, 12)}`;
+
+                    e.target.value = formatted;
+                });
+            }
+
+
+        }, 100);
+    });
 </script>
 
 </html>
