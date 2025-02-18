@@ -6,6 +6,17 @@
     .catalog-modal .search-box {
         margin: 20px 0;
     }
+
+    .catalog-modal .catalog {
+        height: 60vh;
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+
+    .catalog-modal .catalog thead {
+        position: sticky;
+        top: 0;
+    }
 </style>
 
 <div class="catalog-modal modal fade" id="exampleModalCatalog" tabindex="-1" aria-labelledby="exampleModalLabelCatalog"
@@ -46,6 +57,90 @@
                                     </tr>
                                 </thead>
                                 <tbody id="catalogRows">
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ASD123</td>
+                                        <td>Кофе</td>
+                                        <td>Напій</td>
+                                        <td>Мелена кава</td>
+                                        <td>120 грн.</td>
+                                    </tr>
                                     <tr>
                                         <td>ASD123</td>
                                         <td>Кофе</td>
