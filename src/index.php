@@ -29,6 +29,7 @@ $users = 'Log';
     //include $_SERVER['DOCUMENT_ROOT'] . "/app/include/modal-input-barcode.php";  
     ?>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/cashier-workplace-master/src" . "/app/include/modal-input-barcode.php";  ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/cashier-workplace-master/src" . "/app/include/modal-catalog.php";  ?>
 
     <div id="result"></div>
 

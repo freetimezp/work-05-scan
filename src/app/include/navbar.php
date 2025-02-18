@@ -10,14 +10,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="navbar-item nav-link active"
-                    href="<?= "http://localhost/cashier-workplace-master/src" . "/app/views/catalog.view.php" ?>">
+                <!-- Button Catalog modal -->
+                <a class="navbar-item nav-link active" href="#" aria-current="page" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCatalog" id="show-modal-catalog-btn">
                     <i class="bi bi-search"></i>
                     <span>Каталог</span>
                 </a>
             </li>
             <li class="nav-item">
-                <!-- Button modal -->
+                <!-- Button Barcode modal -->
                 <a class="navbar-item nav-link active" href="#" aria-current="page" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" id="show-modal-btn">
                     <i class="bi bi-upc-scan"></i>
